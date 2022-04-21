@@ -15,25 +15,11 @@ void init_array(int n, int a[n])
     {
       a[i] = i;
     }
-}
-
-void erotosthenes_sieve(int n, int a[n])
-{
-  for (int i = 2; i < n; i++)
+}t i = 2; i < n; i++)
     {
         for (int k = i + i; k < n && a[i]; k += i)
          {
-            a[k] = 0;
-          }
-    }
-}
-
-void output(int n, int a[n])
-{
-  for (int i = 0; i < n - 1; i++)
-    {
-      if (a[i])
-        printf("%d,", a[i]);
+            a[k] = 0;d,", a[i]);
     }
   if (a[n-1])
     printf("%d\n", a[n-1]);

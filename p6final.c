@@ -22,6 +22,11 @@ int sub_str_posn(char *string, char *substring)
       else if (j != 0)
         j = 0;
     }
+  if (j != 0)
+    return i - j;
+  return -1;
+}
+
   void output(char* string, char* substring, int index)
 {
     if (index >= 0)
@@ -39,10 +44,3 @@ int main()
     output(str, substr, index);
     return 0;
 }
-
-  if (j != 0)
-    return i - j;
-  return -1;
-}
-
-

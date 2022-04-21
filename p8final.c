@@ -5,8 +5,6 @@ typedef struct point
 {
     float start_end_x, start_end_y;
 } Point;
-
-
 typedef struct line
 {
     Point p;
